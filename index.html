@@ -14,23 +14,29 @@
 </head>
 <style>
   #text {
-  font-family: Arial;
-  font-weight: 800;
-  font-size: 120px;
-  text-decoration: underline;
-  font-style: italic;
-}
+    font-family: Arial;
+    font-weight: 800;
+    font-size: 120px;
+    text-decoration: underline;
+    font-style: italic;
+  }
 
-#container {
-  display: flex;         
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  #container {
+    display: flex;         
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-html, body, #container {
-  height:100%;
-}
+  html, body, #container {
+    height:100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    #text {
+      font-size: 40px;
+    }
+  }
 </style>
 <div id="container">
   <span id="text">Probably.</span>
